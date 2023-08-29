@@ -16,29 +16,6 @@ TasteBite is a restaurant review website! I made this project with the purpose t
      ```
      npm install
      ```
- - Create an account in Firebase and create a project with storage and database;
- - Create a .env file inside the root folder and set the firebase project secret key like this:
-     ```
-     REACT_APP_apiKey="YOUR_FIREBASE_SECRET_KEY"
-     ```
- - Create a firebase.js file and set the code like this (changing the values to the keys and ids of your firebase app):
-     ```
-      import { initializeApp } from "firebase/app";
-      import { getFirestore } from "@firebase/firestore"
-      
-      const firebaseConfig = {
-        apiKey: REACT_APP_apiKey,
-        authDomain: REACT_APP_authDomain,
-        projectId: REACT_APP_projectId,
-        storageBucket: REACT_APP_storageBucket,
-        messagingSenderId: .REACT_APP_messagingSenderId,
-        appId: REACT_APP_appId,
-        measurementId: REACT_APP_measurementId
-      };
-      
-      const app = initializeApp(firebaseConfig);
-      export const firestore = getFirestore(app)
-     ```
  - Then finally run ``` npm run dev ```
 
 ## Notes
